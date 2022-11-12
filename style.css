@@ -104,12 +104,13 @@ form {
 .login {
     display: flex;
     justify-content: center;
+    gap: .5em;
 }
 
 :focus {
     background-color:rgba(223, 247, 202, 0.932);
 }
 
-input[type=text]:invalid {
-    background-color: red;
+input:not(:placeholder-shown):not(:focus):invalid {
+    background-color: crimson;
 }
