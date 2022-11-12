@@ -8,26 +8,54 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="leftside">
-      <img
-        src="images/kerry-hu-qgpLJ1T8KeA-unsplash.jpg"
-        alt="Panda Background"
-        width="500"
-        height="600"
-      />
-      <div class="odinlogo">
-        <img src="images/odin-lined.png" alt="odin" />
-        ODIN
+    <div class="left">
+      <div class="odinbackground">
+        <img class="odinlogo" src="images/odin-lined.png" alt="odin" />
+        <h1 class="odin">ODIN</h1>
+      </div>
+      <div class="credit">
+        Photo by
+        <a
+          href="https://unsplash.com/@kerry_hu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Kerry Hu</a
+        >
+        on
+        <a
+          href="https://unsplash.com/s/photos/panda?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Unsplash</a
+        >
       </div>
     </div>
-    <div class="rightside">
+    <div class="right">
       <div class="warning">
-        <h1>some warning</h1>
+        <p>
+          This is not a real online service! Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Necessitatibus, commodi!
+        </p>
+        <p><p>Sign up <em>now</em> to get started.</p></p>
+        <p class="fat-text">You <em>know</em> you want to.</p>
       </div>
       <div class="form">
-        <form></form>
+        <form>
+          <label for="first-name">First name:</label>
+          <input type="text" id="first-name" />
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" />
+          <label for="email">Email:</label>
+          <input type="email" id="email" />
+          <label for="tel">Phone Number:</label>
+          <input type="tel" id="tel" />
+          <label for="password">Password:</label>
+          <input type="password" id="pwd" />
+          <label for="pwconfirm">Confirm Password:</label>
+          <input type="password" id="pwdconfirm" />
+        </form>
       </div>
-      <div class="login">some buttons</div>
+      <div class="login">
+        <button class="create">Create Account</button>
+        Don't have an account?
+        <a href="file:///C:/Users/Nick/repos/sign-up-form/index.html">Log in</a>
+      </div>
     </div>
   </body>
 </html>

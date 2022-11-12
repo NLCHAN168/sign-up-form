@@ -1,7 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    height: 100%;
+}
+
 body {
     display: flex;
+    min-height: 100%;
+}
+
+.odinbackground {
+    position: relative;
+    top: 20vh;
+    display: flex;
+    background-color: black;
+    opacity: 0.6;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.odin {
+    font-weight: 100;
+    color: white;
+    font-family: "Norse", Times;
+    padding: 5px;
+}
+
+.odinlogo {
+    width: 3em;
+    height: 3em;
+    padding: 5px;
+}
+
+.credit {
+    background-color: rgba(0, 0, 0, 0.404);
+    gap: 10px;
+    font-family: "Bernard MT Condensed", Times;
+    display: flex;
+    justify-content: center;
+    color: white;
+    position: relative;
+    top: 90vh;
+    margin: 0;
 }
 
 .left {
+    background-image: url(images/kerry-hu-qgpLJ1T8KeA-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 40vw;
     display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    max-height: 100%;
+}
+
+.right {
+    background-color: rgba(203, 216, 212, 0.63);
+    display: flex;
+    flex-direction: column;
+    min-width: 70%;
+    max-height: 100vh;
+}
+
+.warning {
+    max-height: 33%;
+}
+
+.signup {
+    max-height: 33%;
+
+}
+
+.login {
+    max-height: 33%;
+
 }
