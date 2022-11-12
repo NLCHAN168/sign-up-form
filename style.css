@@ -43,8 +43,7 @@ body {
     justify-content: center;
     color: white;
     position: relative;
-    top: 90vh;
-    margin: 0;
+    top: 88vh;
 }
 
 .left {
@@ -59,23 +58,58 @@ body {
 }
 
 .right {
+    font-family: "Bernard MT Condensed", Times;
     background-color: rgba(203, 216, 212, 0.63);
     display: flex;
     flex-direction: column;
-    min-width: 70%;
+    justify-content: space-around;
+    max-width: 70%;
     max-height: 100vh;
 }
 
-.warning {
-    max-height: 33%;
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5em;
+    padding-bottom: 10px;
+    margin-top: -5em;
+    flex-shrink: 1;
+}
+
+p {
+    margin: .25em;
 }
 
 .signup {
-    max-height: 33%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: .5em;
+    gap: .5em;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.create {
+    display: flex;
 }
 
 .login {
-    max-height: 33%;
+    display: flex;
+    justify-content: center;
+}
 
+:focus {
+    background-color:rgba(223, 247, 202, 0.932);
+}
+
+input[type=text]:invalid {
+    background-color: red;
 }
