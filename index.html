@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign-up Form</title>
+    <title>Panda Fan Club Sign-up</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/favicon.ico" />
   </head>
   <body>
     <div class="content">
@@ -37,7 +38,7 @@
             panda has been driven out of the lowland areas where it once lived,
             and it is a conservation-reliant vulnerable species. This group aims
             to raise awareness and support for the Giant Panda. Sign up
-            <em>now</em> to get started. You <em>know</em> you want to.
+            <em>now</em> to get started.
           </p>
         </div>
         <div class="signup">
@@ -45,15 +46,20 @@
             <div class="inputs">
               <div class="input">
                 <label for="first-name">First name:</label>
-                <input type="text" id="first-name" />
+                <input type="text" id="first-name" required />
               </div>
               <div class="input">
                 <label for="last-name">Last Name:</label>
-                <input type="text" id="last-name" />
+                <input type="text" id="last-name" required />
               </div>
               <div class="input">
                 <label for="email">Email:</label>
-                <input type="email" id="email" placeholder=" " />
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="johndoe@gmail.com"
+                  required
+                />
               </div>
               <div class="input">
                 <label for="tel">Phone Number:</label>
@@ -61,15 +67,16 @@
                   type="tel"
                   id="tel"
                   pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  placeholder="123-123-1234"
                 />
               </div>
               <div class="input">
                 <label for="password">Password:</label>
-                <input type="password" id="pwd" />
+                <input type="password" id="pwd" required />
               </div>
               <div class="input">
                 <label for="pwconfirm">Confirm Password:</label>
-                <input type="password" id="pwdconfirm" />
+                <input type="password" id="pwdconfirm" required />
               </div>
             </div>
             <div class="formbutton">

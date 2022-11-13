@@ -145,9 +145,5 @@ input {
 
 :focus {
     background-color:rgba(223, 247, 202, 0.932);
-}
-
-input:not(:placeholder-shown):not(:focus):invalid {
-    background-color: crimson;
-    border-radius: 5px;
+    box-shadow: 2px 2px 3px black;
 }
