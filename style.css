@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 html {
     height: 100%;
@@ -9,6 +10,13 @@ html {
 body {
     display: flex;
     min-height: 100%;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .odinbackground {
@@ -43,7 +51,7 @@ body {
     justify-content: center;
     color: white;
     position: relative;
-    top: 88vh;
+    top: 90vh;
 }
 
 .left {
@@ -62,7 +70,7 @@ body {
     background-color: rgba(203, 216, 212, 0.63);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     max-width: 70%;
     max-height: 100vh;
 }
@@ -71,14 +79,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     gap: .5em;
-    padding-bottom: 10px;
-    margin-top: -5em;
-    flex-shrink: 1;
+    padding: 0em 5em 0em 5em;
+}
+
+h1 {
+    padding-bottom: 1em;
 }
 
 p {
     margin: .25em;
+    letter-spacing: .5px;
 }
 
 .signup {
@@ -87,14 +99,13 @@ p {
     justify-content: center;
 }
 
-form {
+.inputs {
+    padding-left: 5em;
     display: flex;
     flex-wrap: wrap;
-    padding: .5em;
-    gap: .5em;
-    margin-bottom: 0;
+    gap: 1em;
     box-sizing: border-box;
-    justify-content: center;
+    min-height: 300px;
 }
 
 .create {
@@ -104,7 +115,32 @@ form {
 .login {
     display: flex;
     justify-content: center;
+    align-items: flex-end;
     gap: .5em;
+}
+
+.formbutton {
+    padding-left: 5em;
+    position: relative;
+    top: -40px;
+}
+
+button {
+    font-weight: 750;
+    margin: 40px;
+    margin-left: 0px;
+    padding: 1em 5em;
+    border-radius: 5px;
+}
+
+input {
+    padding: .5em 5em .5em .1em;
+    display: flex;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
 }
 
 :focus {
@@ -113,4 +149,5 @@ form {
 
 input:not(:placeholder-shown):not(:focus):invalid {
     background-color: crimson;
+    border-radius: 5px;
 }
